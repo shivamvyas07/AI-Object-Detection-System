@@ -10,9 +10,19 @@ A real-time computer vision system engineered using the TensorFlow Object Detect
 ---
 
 ## 🛠️ Tech Stack & Frameworks
-* **Language:** Python
-* **Framework:** TensorFlow (Object Detection API)
-* **Libraries:** OpenCV, NumPy, Matplotlib
+* **Language:** Python 3.7
+* **Framework:** TensorFlow API (v1.14)
+* **Inference Optimization:** NVIDIA TensorRT (FP16 & INT8 Precision)
+* **Libraries:** OpenCV (Webcam feed processing), labelImg (Annotation), Pycocotools
+
+---
+
+## ⚙️ Architecture & Pipeline Optimization
+The system leverages a pre-trained **Single Shot Detection (SSD) network with an Inception V2 backbone**, highly optimized for real-time edge processing on NVIDIA GPUs.
+
+1. **Dataset Engineering:** Annotations were custom-curated using `labelImg` to build a dataset of ~450 targeted images differentiating between medical masks, cloth masks, and security anomalies.
+2. **Precision Quantization:** Applied TensorRT optimization routines to calibrate and convert the frozen graph into INT8 and FP16 precision. This execution strategy maximizes Tensor Core utilization, providing low-latency inference with negligible accuracy drop.
+3. **Inference Execution:** Streamlined bounding box regression overlay using OpenCV to continuously intercept frames from a live webcam feed and render predictions dynamically.
 
 ---
 
