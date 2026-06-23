@@ -1,4 +1,5 @@
 # AI Object Detection System (Face Mask & Threat Classification)
+![System Demo](demo.png)
 
 A real-time computer vision system engineered using the TensorFlow Object Detection API to classify face mask compliance and security threats. This prototype optimizes the inference pipeline for live video feeds, mimicking high-throughput physical deployment environments.
 
