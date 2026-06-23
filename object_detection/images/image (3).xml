@@ -1,0 +1,38 @@
+<annotation>
+	<folder>images</folder>
+	<filename>image (3).jpg</filename>
+	<path>C:\Users\sivam\Desktop\Masks\images\image (3).jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>100</width>
+		<height>100</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>cloth_mask</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>9</xmin>
+			<ymin>31</ymin>
+			<xmax>45</xmax>
+			<ymax>70</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>cloth_mask</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>74</xmin>
+			<ymin>18</ymin>
+			<xmax>100</xmax>
+			<ymax>53</ymax>
+		</bndbox>
+	</object>
+</annotation>

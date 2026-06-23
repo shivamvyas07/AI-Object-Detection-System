@@ -1,0 +1,14 @@
+item {
+	id: 1
+	name: 'cloth_mask'
+}
+
+item {
+	id: 2
+	name: 'Medical_Mask'
+}
+
+item {
+	id: 3
+	name: 'Gloves'
+}
